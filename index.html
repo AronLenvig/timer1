@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabletop Game Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="timer-container">
+        <svg id="timer-circle" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#4CAF50" stroke-width="2"></circle>
+            <text id="timer-text" x="50" y="50" text-anchor="middle" dy="7" font-size="20">00:00</text>
+        </svg>
+    </div>
+    <div id="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="continue">Continue</button>
+        <button id="reset">Reset</button>
+    </div>
+    <audio id="wake-up-sound" src="wake-up-sound.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
